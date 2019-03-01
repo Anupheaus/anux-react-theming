@@ -1,0 +1,53 @@
+div.app {
+  position: relative;
+  display: flex;
+  flex: auto;
+  margin: 50px;
+
+  > div.within-provider {
+    position: relative;
+    display: flex;
+    flex: auto;
+    margin: 40px;
+    background-color: #00000020;
+
+    > div.within-consumer,
+    div.within-updater {
+      position: relative;
+      display: flex;
+      flex: auto;
+      margin: 40px;
+      background-color: #00000020;
+    }
+
+    > div.within-consumer {
+      background-color: var(--background-color);
+    }
+  }
+}
+
+div.render-count {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  > div.render-count-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
